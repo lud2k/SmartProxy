@@ -1,0 +1,14 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "forever start --minUptime 1000ms --spinSleepTime 1000ms --append --uid \"proxy\" app.js",
+    "stop": "forever stop proxy",
+    "restart": "forever restart proxy"
+  },
+  "dependencies": {
+    "bouncy": "^3.2.2",
+    "forever": "^2.0.0"
+  }
+}
